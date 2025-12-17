@@ -12,9 +12,9 @@ The modeling strategy shifted the focus from overall accuracy to **Recall**  for
 
 1.  **Cost-Sensitive Training:** The XGBoost classifier was initialized with `scale_pos_weight` (set to $\approx 3.5$). This mathematically forces the model to treat missing a default as $3.5$ times more costly than any other error, fundamentally changing its learning objective.
 
-2.  **F2-Score Optimization:** The final decision threshold was not set at the standard $0.50$. Instead, it was dynamically adjusted to the value that maximized the **F2-Score** (Recall weighted twice as heavily as Precision) [cite: uploaded:Models.pdf, 770].
+2.  **F2-Score Optimization:** The final decision threshold was not set at the standard $0.50$. Instead, it was dynamically adjusted to the value that maximized the **F2-Score** (Recall weighted twice as heavily as Precision).
 
-3.  **Optimal Threshold:** The resulting optimal operational threshold was determined to be $0.32$ [cite: uploaded:Models.pdf, 793].
+3.  **Optimal Threshold:** The resulting optimal operational threshold was determined to be $0.32$.
 
 ### Key Performance Results
 
