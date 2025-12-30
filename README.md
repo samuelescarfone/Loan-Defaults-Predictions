@@ -29,8 +29,8 @@ The final model achieves a Recall of $87\%$ for the default class, successfully 
 
 ### Technical Stack
 
-* **Modeling:** XGBoost, Keras/TensorFlow (for comparison)
+* **Modeling:** XGBoost
 
 * **Core Libraries:** Python, pandas, numpy, scikit-learn
 
-* **Imbalance Handling:** `scale_pos_weight`, `fbeta_score`
+
